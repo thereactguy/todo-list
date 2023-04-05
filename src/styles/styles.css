@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--primaryPurple: #646ff0;
+	--black-1: #646681;
+	--black-2: #585858;
+	--bg-1: #f8f8ff;
+	--bg-2: #ecedf6;
+	--bg-3: #cccdde;
+	--gray-1: #eee;
+	--gray-2: #dedfe1;
+	--black: black;
+	--white: white;
+}
+html {
+	font-size: 10px;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--bg-1);
+}
+* {
+	font-family: 'Poppins', sans-serif;
+}
+.container {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.contentBlock {
+	display: block;
+	background-color: #ecedf6;
+	padding: 16px;
+    border-radius: 8px;
+}
+
+.pageTitle {
+	color: #646681;
+	display: inline-block;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem auto 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.blockTitle {
+	color: #646681;
+	display: inline-block;
+    font-family: Poppins;
+	text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    text-transform: uppercase;
+    width: 100%;
+	margin-top: 16px !important;
+}
+
+.inputText {
+	border: none;
+    font-size: 1.6rem !important;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+	margin-right: 16px !important;
+	margin-bottom: 16px !important;
+	border-radius: 6px;
+	height: 42px;
+	max-width: calc(100% - 80px);
+}
+
+.MuiInputBase-root {
+	font-size: 1.6rem !important;
+}
+
+.listItems li .inputText {
+	margin-bottom: 0;
+    margin-top: 16px;
+	max-width: calc(100% - 81px);
+}
+
+.submitButton {
+	background-color: #646ff0;
+	color: #fff;
+	border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    height: 55px;
+    overflow: hidden;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    text-transform: capitalize;	
+}
+
+.listItems .submitButton {
+	margin-top: 16px;
+}
+
+.listItems {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.listItems li {
+	background: #fff;
+    border-radius: 4px;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.displayContent {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.displayContent .manageList {
+	display: flex;
+	width: 100%;
+}
+
+.actionBtns {
+	background-color: #eee;
+    border-radius: 4px;
+	border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 0.7rem;
+	margin: 0 0.7rem;
+    transition: background-color .3s ease;
+}
+
+.todoTitle {
+	max-width: inherit;
+	display: flex;
+}
+
+.todoTitle label {
+	margin-right: 0 !important;
+	margin-top: -5px !important;
+}
+
+@media screen and (max-width: 767px) {
+	.displayContent {
+		display: block;
+	}	
+	.displayContent div {
+		max-width: inherit;
+	}
+	.displayContent button {
+		margin: 10px 8px 0;
+		
+	}
+	.displayContent button:first-child {
+		margin-left: 0;	
+	}
+}
